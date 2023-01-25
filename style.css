@@ -1,0 +1,228 @@
+.nav-item {
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+}
+
+.carousel-caption {
+    top: 200px;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-shadow: 2px 2px #000000;
+
+}
+
+.dropdown-menu a:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.display {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+.aboutheadline {
+    font-size: 38px;
+    font-weight: bolder;
+    line-height: 1;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.aboutus {
+    background: url(https://wallpapercave.com/wp/wp4659358.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.chestbg {
+    background: url(https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/Chest-and-triceps-workout.jpg?resize=1536%2C864&ssl=1) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.main_text {
+    margin-top: 5%;
+    font-weight: bolder;
+    font-size: 100px;
+    text-shadow: 2px 2px #000000;
+}
+
+.backbg {
+    background: url(https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/08/back-and-biceps-workout.jpg?w=1000&ssl=1) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.shoulderbg {
+    background: url(https://www.trainheroic.com/wp-content/uploads/2022/09/AdobeStock_142135317-TH.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.instructorbg {
+    background: url(https://images.theconversation.com/files/339674/original/file-20200604-130929-iutdtd.jpg?ixlib=rb-1.1.0&rect=49%2C622%2C5472%2C2736&q=45&auto=format&w=1356&h=668&fit=crop) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.registrationbg {
+    background: url(https://wallpaperaccess.com/full/1087594.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.aboutus_text {
+    margin-top: 5%;
+    font-weight: bolder;
+    font-size: 70px;
+    text-shadow: 2px 2px #000000;
+}
+
+.aboutus_subtext {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+
+.simplebox {
+    padding: 70px 0 50px 0;
+    text-align: center;
+}
+
+.box-header {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-header {
+        padding-top: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_text {
+        font-size: 65px;
+    }
+    .display {
+        margin-top: -165px;
+        font-size: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+.divider-right {
+    border-left: 1px solid #cecece;
+    margin-left: 0px;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.facts {
+    font-weight: bold;
+}
+
+.fitness {
+    background: url(https://wallpaper.dog/large/5561229.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0px 100px 0;
+    padding-top: 40px;
+}
+
+.headline_text {
+    font-weight: bolder;
+    font-size: 60px;
+    text-shadow: 2px 2px #000000;
+}
+
+.headline_subtext {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+
+span {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.simplebox-grey {
+    padding: 60px 0 60px 0px;
+    background-color: #f7f7f7;
+}
+
+.footer {
+    position: relative;
+    padding-top: 1em;
+}
+
+.footer .social-media .footer-list {
+    position: relative;
+    margin: 0 0 1.5em 0;
+    display: inline-block;
+    list-style: none;
+}
+
+.footer .social-media .footer-list li {
+    float: left;
+    margin-right: 2em;
+}
+
+.footer .social-media .footer-list li a {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+}

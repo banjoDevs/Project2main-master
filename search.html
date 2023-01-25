@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RFG Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo2.png" alt="Rfglogo" style="width: 200px; height:115px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            WORKOUTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="chest.html">Chest and Triceps</a></li>
+                            <li><a class="dropdown-item" href="back.html">Back and Biceps</a></li>
+                            <li><a class="dropdown-item" href="legs.html">Shoulder and Legs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="instructor.html">INSTRUCTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="talk.html">LET'S TALK</a>
+                    </li>
+            </div>
+    </nav>
+    </header>
+
+    <!-- search bar-->
+    <div id="preloaderIndex">
+
+    </div>
+
+    <div class="main-wrapper">
+        <div class="header">
+
+            <nav id="mainNavbar">
+
+            </nav>>
+
+            <div id="quickLinks">
+
+                <div>
+                    Hello
+                </div>
+                <div class="container pt-4">
+                    <h1 class="orangeText text-center m-4 mb-3 text-light fw-bold">
+                        <img class="mb-2" src="https://i.ibb.co/Ybyzj0Z/GGNext-Logo-white2.png" width="100" alt=""><br>
+                        Search <span class="text-light">Game Title</span>
+                    </h1>
+                    <hr class="container-fluid col-9 hr2">
+                    <div class="container text-center pt-5 mt-5 pb-5 mb-5">
+                        <div class="container d-flex justify-content-center">
+                            <input class="form-control inputBg border-0 border-bottom rounded-0 text-light"
+                                type="search" placeholder="Enter game title or keyword" id="searchInput">
+
+                            <button type="button" class="btn col-1 p-0" onclick="searchBtn()"><img
+                                    class="searchBtnSize" src="images/search-icon.png" alt=""
+                                    id="searchBtnSize"></button>
+                        </div>
+                        <div class="container">
+                            <div class="row text-center pt-5" id="searchFieldInfo">
+
+                            </div>
+                            <div class="row d-flex justify-content-center pt-5" id="searchField">
+                            </div>
+                            <div id="errorCatcher">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-opacity-50 pt-5 mt-5" id="mainFooter">
+
+            </div>
+            <div class="footerCRights d-flex justify-content-center align-items-center p-2" id="mainFooter2">
+
+            </div>
+
+
+
+
+            <!-- Sponsors -->
+            <div class="simplebox-grey">
+                <div class="container">
+                    <div class="aboutheadline text-center mb-1 pb-5">OUR SPONSOR AND CLUB PARTNERS</div>
+                    <d class="row d-flex justify-content-center align-items-center">
+                        <div class="col-6 col-md-2 logo-img">
+                            <img src="https://www.lesmills.com.au/sites/default/files/2021-07/fitness-first-malaysia-official-logo.png"
+                                width="150" data-orientation="portrait">
+                        </div>
+                        <div class="col-6 col-md-2 logo-img">
+                            <img src="data:image/png;base64,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"
+                                width="150" data-orientation="landscape">
+                        </div>
+                        <div class="col-6 col-md-2 logo-img">
+                            <img src="https://www.lesmills.com.au/sites/default/files/2021-07/Gold%27s%20Gym.png"
+                                width="100" data-orientation="square">
+                        </div>
+                        <div class="col-6 col-md-2 logo-img">
+                            <img src="https://www.lesmills.com.au/sites/default/files/2021-07/Good%20Life%20Health%20Clubs.png"
+                                width="150" data-orientation="landscape">
+                        </div>
+                        <div class="col-6 col-md-2 logo-img">
+                            <img src="https://www.lesmills.com.au/sites/default/files/2021-07/Virgin_Active.svg_.png"
+                                width="150" data-orientation="landscape">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid  text-white p-3" style=" Roboto Condensed , Helvetica, sans-serif background: #0f0c29;
+  background: linear-gradient(to right, #2b2b33, #101014, #000000);">
+
+        <div class="mt-3 ">
+            <h3 class="text-center fw-bold">Want to be our Sponsor or Partner with us?</h3>
+            <p class="text-center">Feel free to inquire and have fun with our gym members,<br>Our sponsors will serve as
+                official Ripped Fit Gym partners and will receive VIP membership. <br>
+                Kindly click the Get Started</p>
+            <center><a class="btn btn-outline-light" href="talk.html" role="button">Get Started</a></center>
+            <hr>
+        </div>
+
+        <div class="row justify-content-around text-center text-md-start">
+
+            <div class="col-md-1 text-center">
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li class="fw-bold my-2">Partnership</li>
+                    <li> <a href="#" class="text-decoration-none text-white">Fitness First</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Whey King Supplement</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Gold's Gym</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Goodlife Health clubs</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Virgin Active</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li class="fw-bold my-2">About</li>
+                    <li> <a href="#" class="text-decoration-none text-white">Our Project</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Careers</a> </li>
+
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li class="fw-bold my-2">Support</li>
+                    <li> <a href="#" class="text-decoration-none text-white">Contact</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Support Request</a> </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <li class="fw-bold my-2 list-unstyled">Follow us</li>
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                    <li><a href="https://www.facebook.com" class="text-white"><i
+                                class="fa-brands fa-facebook me-2 fa-1x"></i></a>
+                    </li>
+                    <li><a href="https://www.web.whatsapp.com" class="text-white"><i
+                                class="fa-brands fa-whatsapp mx-2 fa-1x"></i></a></li>
+                    <li><a href="https://www.youtube.com" class="text-white"><i
+                                class="fa-brands fa-youtube mx-2 fa-1x"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" class="text-white"><i
+                                class="fa-brands fa-instagram mx-2 fa-1x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center pt-2">
+                <p>&copy; 2022 Copyright <a href="index.html" class="text-white">RIPPED FIT GYM</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="general.js"></script>
+    <script src="searchbar.js"></script>
+    <script src="contact2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
